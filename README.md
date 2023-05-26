@@ -9,3 +9,9 @@
 4. Monitor the quality of a project
 5. Launch an authentication for each HTTP request
 6. Produce a technical documentation
+
+ ---
+
+### Links
+
+[Codacy Review](https://app.codacy.com/gh/Galuss1/openclassrooms-bilemo/dashboard)
