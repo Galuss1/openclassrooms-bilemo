@@ -10,10 +10,17 @@
 5. Launch an authentication for each HTTP request
 6. Produce a technical documentation
 
- ---
+--- --- ---
 
-### Installation guide
+### Setting up the project
 
+#### Required
+1. [PHP 8.1](https://www.php.net/downloads.php)
+2. [Symfony CLI](https://symfony.com/download)
+3. [Composer](https://getcomposer.org/download/)
+4. [MySQL](https://www.mysql.com/fr/downloads/)
+
+#### Installation
 1. **Clone the repository**
 ```bash
 git clone https://github.com/Galuss1/openclassrooms-bilemo.git
@@ -73,7 +80,7 @@ symfony console doctrine:fixtures:load
 symfony server:start
 ```
 
- ---
+ --- --- ---
 
 ### Links
 [API Documentation](https://www.bilemo.gael-paquien.fr/api/doc)<br />
