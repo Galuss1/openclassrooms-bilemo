@@ -44,7 +44,7 @@ final class ProductController extends AbstractController
      *        required=false,
      *
      *        @OA\Schema(type="integer")
-     *    )
+     *    ),
      *
      *    @OA\Response(
      *       response=200,

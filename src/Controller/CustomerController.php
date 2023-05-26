@@ -112,7 +112,7 @@ final class CustomerController extends AbstractController
      *        required=false,
      *
      *        @OA\Schema(type="integer")
-     *    )
+     *    ),
      *
      *    @OA\Response(
      *       response=200,
