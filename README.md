@@ -1,6 +1,6 @@
-# PHP/Symfony application developer training - OpenclassRooms (P7)
+# PHP/Symfony application developer - OpenclassRooms (P7)
 
-## Exercise: Create a web service exposing an API
+## Create a web service exposing an API
 
 ### Skills assessed
 1. Exposing a REST API with Symfony
@@ -9,8 +9,6 @@
 4. Monitor the quality of a project
 5. Launch an authentication for each HTTP request
 6. Produce a technical documentation
-
---- --- ---
 
 ### Setting up the project
 
@@ -83,5 +81,6 @@ symfony server:start
  --- --- ---
 
 ### Links
-[API Documentation](https://www.bilemo.gael-paquien.fr/api/doc)<br />
+[API Documentation](https://www.formation.bilemo.gaelpaquien.com/api/doc)\
+[Repository archive containing all deliverables](https://github.com/Galuss1/openclassrooms-archive/tree/main/php-symfony-application-developer/project-7)\
 [Codacy Review](https://app.codacy.com/gh/Galuss1/openclassrooms-bilemo/dashboard)
