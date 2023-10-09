@@ -1,4 +1,4 @@
-# PHP/Symfony application developer - OpenclassRooms (P7)
+# PHP/Symfony application developer - OpenClassrooms (Project 7)
 
 ## Create a web service exposing an API
 
