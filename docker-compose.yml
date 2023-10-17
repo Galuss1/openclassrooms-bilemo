@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html
+    env_file:
+      - .env.local
+    depends_on:
+      - database
+      - mailhog
+
+  database:
+    image: mysql:5.7
+    volumes:
+      - database_data:/var/lib/mysql
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    ports:
+      - 3310:3306
+    env_file:
+      - .env.local
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
+
+volumes:
+  database_data: {}
