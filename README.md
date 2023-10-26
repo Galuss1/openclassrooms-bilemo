@@ -17,7 +17,9 @@ https://github.com/Galuss1/openclassrooms-archive/tree/main/php-symfony-applicat
 ### Installation
 1. **Clone the repository on the main branch**
 
-2. **Generate your public and private keys and create your passphrase** \
+2. **Create the .env.local file and replace the values of the .env origin file**
+
+3. **Generate your public and private keys and create your passphrase** \
 *The keys must be in the "config/jwt" folder, simply use the commands below from the project root.*
 ```bash
 openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
@@ -25,8 +27,6 @@ openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_
 ```bash
 openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
 ```
-
-3. **Create the .env.local file and replace the values of the .env origin file**
 
 4. **If you are using docker, install your environment and start the project**
 ```bash
