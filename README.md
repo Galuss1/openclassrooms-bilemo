@@ -28,7 +28,7 @@ openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_
 openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
 ```
 
-4. **If you are using docker, install your environment and start the project**
+4. **Only if you are using Docker, environment installation**
 ```bash
 docker-compose up --build
 ```
