@@ -3,7 +3,7 @@ FROM php:8.1-apache
 
 # Install system dependencies and PHP extensions
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y git curl unzip libzip-dev libicu-dev netcat-openbsd && \
+    apt-get install -y git curl unzip libzip-dev libicu-dev netcat-openbsd openssl && \
     docker-php-ext-install pdo pdo_mysql zip intl opcache && \
     pecl install apcu && docker-php-ext-enable apcu && \
     a2enmod rewrite && \

@@ -3,6 +3,9 @@
 
 RewriteEngine On
 
+# Configure the HTTP_AUTHORIZATION environment variable so that Symfony can correctly read the Authorization header
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
 # Force redirection to HTTPS (prod only)
 # RewriteCond %{HTTPS} off
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
