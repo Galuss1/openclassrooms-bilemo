@@ -19,16 +19,7 @@ https://github.com/Galuss1/openclassrooms-archive/tree/main/php-symfony-applicat
 
 2. **Create the .env.local file and replace the values of the .env origin file**
 
-3. **Generate your public and private keys and create your passphrase** \
-*The keys must be in the "config/jwt" folder, simply use the commands below from the project root.*
-```bash
-openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
-```
-```bash
-openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
-```
-
-4. **Only if you are using Docker, environment installation**
+3. **Only if you are using Docker, environment installation**
 ```bash
 docker-compose up --build
 ```
@@ -37,6 +28,15 @@ The API doc is accessible at http://localhost:8080/api/doc \
 Mailhog web interface (SMTP) is accessible at http://localhost:8025 \
 The database was created with data at localhost:3310 \
 Your installation is complete, you do not need to follow the next steps.
+
+4. **Generate your public and private keys and create your passphrase** \
+*The keys must be in the "config/jwt" folder, simply use the commands below from the project root.*
+```bash
+openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
+```
+```bash
+openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
+```
 
 5. **Installing dependencies**
 ```bash
