@@ -1,6 +1,7 @@
 version: '3.8'
 services:
   app:
+    container_name: symfony-app
     build:
       context: .
       dockerfile: Dockerfile
@@ -15,6 +16,7 @@ services:
       - mailhog
 
   database:
+    container_name: database
     image: mysql:5.7
     volumes:
       - database_data:/var/lib/mysql
@@ -25,6 +27,7 @@ services:
     user: 1000:1000
 
   mailhog:
+    container_name: mailhog
     image: mailhog/mailhog
     ports:
       - 8025:8025

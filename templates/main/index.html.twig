@@ -3,6 +3,52 @@
 {% block title %}Accueil / BileMo API{% endblock %}
 
 {% block body %}
-    <h1>Hello World</h1>
-    <a href="/api/doc">Lien vers la documentation de l'API</a>
+    <div id="project-popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>OpenClassrooms - BileMo API</h2>
+            </div>
+            <div class="popup-body">
+                <div class="popup-context">
+                    <h3>Contexte du projet</h3>
+                    <p>
+                        Ce projet a été réalisé dans le cadre de la formation OpenClassrooms "Développeur d'application - PHP/Symfony".
+                        <br>
+                        L'objectif du projet était de créer une API REST avec Symfony, permettant d'exposer les produits d'un client.
+                    </p>
+                    <div>
+                        <p style="margin-bottom: 3px;">Le projet devait respecter les consignes suivantes :</p>
+                        <ul>
+                            <li>Introduire un système d'authentification (JWT ou OAuth)</li>
+                            <li>Respecté les règles de niveau 1, 2 et 3 du modèle de Richardson</li>
+                            <li>Les réponses doivent être mises en cache</li>
+                            <li>L'API doit être accompagné d'une documentation</li>
+                            <li>Le projet devait être facilement évolutif mais également suivis avec Codacy afin de garantir la qualité du code</li>
+                            <li>L'usage de librairies tierces était autorisé</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup-skills">
+                    <h3>Compétences évaluées</h3>
+                    <ul>
+                        <li>Exposer une API REST avec Symfony</li>
+                        <li>Lancer une authentification à chaque requête HTTP</li>
+                        <li>Produire une documentation technique</li>
+                        <li>Analyser et optimiser les performances d’une application</li>
+                        <li>Concevoir une architecture efficace et adaptée</li>
+                        <li>Suivre la qualité d’un projet</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="/api/doc" target="_blank">Documentation API</a></li>
+                    <li><a href="https://github.com/Galuss1/openclassrooms-bilemo" target="_blank">Code source GitHub</a></li>
+                    <li><a href="https://www.gaelpaquien.com" target="_blank">Mon site personnel</a></li>
+                    <li><a href="/mentions-legales" target="_blank">Mentions légales</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 {% endblock %}
