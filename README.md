@@ -63,5 +63,5 @@ symfony server:start
 
 ### Links
 [Website](https://www.formation.bilemo.gaelpaquien.com)\
-[Codacy Review](https://app.codacy.com/gh/Galuss1/openclassrooms-bilemo/dashboard)
+[Codacy Review](https://app.codacy.com/gh/Galuss1/openclassrooms-bilemo/dashboard)\
 [Old repository containing training deliverables](https://github.com/Galuss1/openclassrooms-archive/tree/main/php-symfony-application-developer/project-7)
