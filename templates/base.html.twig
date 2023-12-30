@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}BileMo API{% endblock %}</title>
+        <meta name="description" content="Création d'une API REST, permettant d'exposer une liste de produits et d'utilisateurs accessible aux clients authentifiés.">
+        <meta name="author" content="BileMo API">
         <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
         <link rel="stylesheet" href="assets/css/style.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, nofollow">
+        {# <meta name="robots" content="index, follow"> #}
 
         <!-- CSS -->
         {% block stylesheets %}
