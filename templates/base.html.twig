@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}BileMo API{% endblock %}</title>
+        <meta charset="UTF-8" />
+        <meta http-esquiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="BileMo API">
         <meta name="description" content="Création d'une API REST, permettant d'exposer une liste de produits et d'utilisateurs accessible aux clients authentifiés.">
-        <meta name="author" content="BileMo API">
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
+        <meta name="author" content="Gaël PAQUIEN">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="BileMo API">
+        <meta property="og:description" content="Création d'une API REST, permettant d'exposer une liste de produits et d'utilisateurs accessible aux clients authentifiés.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://formation.bilemo.gaelpaquien.com/">
+        <meta property="og:image" content="https://formation.bilemo.gaelpaquien.com/assets/img/image-portfolio-projet-bilemoapi.jpg">
+        <meta property="og:image:type" content="image/jpeg" >
+        <meta property="og:image:width" content="1800" >
+        <meta property="og:image:height" content="550" >
+
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/style.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="noindex, nofollow">
-        {# <meta name="robots" content="index, follow"> #}
+
+        <!-- Favicon & Title -->
+        <title>{% block title %}BileMo API{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
 
         <!-- CSS -->
         {% block stylesheets %}
