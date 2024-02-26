@@ -1,5 +1,9 @@
 # OpenClassrooms - BileMo
 
+## Description
+Creation of a REST API, allowing to expose a list of products and users accessible to authenticated clients.\
+This project was carried out as part of a training course. Below you will find the link to the initial repository containing all the training deliverables.
+
 ## Setting up
 
 ### Required
